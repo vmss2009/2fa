@@ -11,14 +11,14 @@ Whatsapp_or_SMS = int(input("Choose your number : "))
 phone1 = int(input ("Your phone number please : "))
 phone2 = str(phone1)
 
-account_sid = "AC079b757bdb8517514534898b142ea8c1" 
-auth_token = "aa5ee5ee8070ddcefa9ad584a81b9174"
+account_sid = "Your account sid" 
+auth_token = "Your authorized token"
 client = Client(account_sid, auth_token) 
 
 if Whatsapp_or_SMS == 1 :
  
   message = client.messages.create(  
-                                messaging_service_sid="MG536cabc61faa6ced308016a65b047913", 
+                                messaging_service_sid="Your messaging service sid", 
                                 body="Your code for verification is - " + str_random_num, 
                                 to="+91" + phone2
                                   )
